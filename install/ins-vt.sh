@@ -41,7 +41,7 @@ cat > /etc/v2ray/config.json <<-EOF
   },
   "inbounds": [
     {
-      "port": 443,
+      "port": 8443,
       "protocol": "vmess",
       "settings": {
         "clients": [
@@ -54,15 +54,7 @@ cat > /etc/v2ray/config.json <<-EOF
       },
       "streamSettings": {
         "network": "ws",
-        "security": "tls",
-        "tlsSettings": {
-          "certificates": [
-            {
-              "certificateFile": "/etc/v2ray/v2ray.crt",
-              "keyFile": "/etc/v2ray/v2ray.key"
-            }
-          ]
-        },
+        "security": "none",
         "wsSettings": {
           "path": "/v2ray",
           "headers": {
