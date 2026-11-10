@@ -155,7 +155,7 @@ echo "   - SSTP VPN                 : 5555" | tee -a log-install.txt
 echo "   - Shadowsocks-R            : 1443-1543" | tee -a log-install.txt
 echo "   - SS-OBFS TLS              : 2443-2543" | tee -a log-install.txt
 echo "   - SS-OBFS HTTP             : 3443-3453" | tee -a log-install.txt
-echo "   - V2RAY Vmess TLS          : 8443" | tee -a log-install.txt
+echo "   - V2RAY Vmess TLS          : 443" | tee -a log-install.txt
 echo "   - V2RAY Vmess None TLS     : 880" | tee -a log-install.txt
 echo "   - V2RAY Vless TLS          : 2083" | tee -a log-install.txt
 echo "   - V2RAY Vless None TLS     : 2052" | tee -a log-install.txt
