@@ -11,6 +11,7 @@ Instaladores de VPN reunidos en un solo repo.
 - `install/shadowsocksobfs.sh` — Shadowsocks OBFS
 - `install/ins-vt.sh` — V2Ray
 - `install/ipsec.sh` — L2TP/IPSEC
+- `install/ssl.sh` — SSL con Let's Encrypt / Certbot (pide dominio, emite el certificado)
 
 Los 8 instaladores de servicios vienen de syapik96/aws (rama main), que es la fuente que usa setup.sh.
 
