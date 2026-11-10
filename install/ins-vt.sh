@@ -54,7 +54,15 @@ cat > /etc/v2ray/config.json <<-EOF
       },
       "streamSettings": {
         "network": "ws",
-        "security": "none",
+        "security": "tls",
+        "tlsSettings": {
+          "certificates": [
+            {
+              "certificateFile": "/etc/v2ray/v2ray.crt",
+              "keyFile": "/etc/v2ray/v2ray.key"
+            }
+          ]
+        },
         "wsSettings": {
           "path": "/v2ray",
           "headers": {

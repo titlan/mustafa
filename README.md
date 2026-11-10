@@ -9,9 +9,10 @@ Instaladores de VPN reunidos en un solo repo.
 - `install/wg.sh` — WireGuard
 - `install/ssr.sh` — Shadowsocks-R
 - `install/shadowsocksobfs.sh` — Shadowsocks OBFS
-- `install/ins-vt.sh` — V2Ray (Vmess ws plano en 8443 interno, detras de Stunnel4 en 443)
+- `install/ins-vt.sh` — V2Ray (Vmess TLS en 8443 interno, detras de HAProxy en 443)
 - `install/ipsec.sh` — L2TP/IPSEC
-- `install/stunnel.sh` — Stunnel4 en el puerto 443, frente TLS de V2Ray (443 -> 127.0.0.1:8443)
+- `install/stunnel.sh` — Stunnel4 en 127.0.0.1:8444 interno, detras de HAProxy en 443, hacia SSH
+- `install/haproxy.sh` — HAProxy en 443, reparte por SNI: V2Ray y Stunnel4
 - `install/ssl.sh` — reemplazado por Stunnel4, solo redirige a stunnel.sh
 
 Los 8 instaladores de servicios vienen de syapik96/aws (rama main), que es la fuente que usa setup.sh.
